@@ -1,0 +1,8 @@
+<!doctype html>
+<title>piWeather</title>
+{% if temperature and humidity %}
+  <h1>Temperature: {{ temperature }}°C</h1>
+  <h1>Humidity: {{ humidity }}%</h1>
+{% else %}
+  <h1>Error retrieving data</h1>
+{% endif %}
