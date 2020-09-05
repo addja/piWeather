@@ -1,8 +1,25 @@
 <!doctype html>
-<title>piWeather</title>
-{% if temperature and humidity %}
-  <h1>Temperature: {{ temperature }}°C</h1>
-  <h1>Humidity: {{ humidity }}%</h1>
-{% else %}
-  <h1>Error retrieving data</h1>
-{% endif %}
+<html lang="en">
+
+  <head>
+    <title>piWeather</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+
+  <body>
+  <div class="container-md my-3" >
+    <!-- <div class="container-fluid p-4 bg-dark rounded-sm text-white text-center shadow"> -->
+    <div class="jumbotron bg-dark text-white text-center shadow">
+      {% if temperature and humidity %}
+      <h1>Home</h1>
+      <h2>temperature: {{ temperature }}°C</h2>
+      <h2>humidity: {{ humidity }}%</h2>
+      {% else %}
+      <h1>Error retrieving data</h1>
+      {% endif %}
+    </div>
+  </div>
+  </body>
+</html>
