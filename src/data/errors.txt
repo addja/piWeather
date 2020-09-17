@@ -1,0 +1,1 @@
+17-09-20,21:28:(<class 'RuntimeError'>, RuntimeError('DHT sensor not found, check wiring'), <traceback object at 0xb6559b70>)
